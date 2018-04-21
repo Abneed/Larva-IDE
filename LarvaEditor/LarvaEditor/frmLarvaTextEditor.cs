@@ -124,7 +124,7 @@ namespace LarvaEditor
                 {
                     try
                     {
-                        ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.RichText);
+                        ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.PlainText);
                     }
                     catch (Exception e)
                     {
