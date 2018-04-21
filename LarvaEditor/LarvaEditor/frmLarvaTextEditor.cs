@@ -122,7 +122,14 @@ namespace LarvaEditor
             {
                 if (saveFileDialogTextEditor.FileName.Length > 0)
                 {
-                    ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.RichText);
+                    try
+                    {
+                        ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.RichText);
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.Message);
+                    }
                 }
             }
         }
@@ -138,7 +145,14 @@ namespace LarvaEditor
             {
                 if (saveFileDialogTextEditor.FileName.Length > 0)
                 {
-                    ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.PlainText);
+                    try
+                    { 
+                        ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.PlainText);
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.Message);
+                    }
                 }
             }
         }
@@ -146,13 +160,20 @@ namespace LarvaEditor
         private void Abrir()
         {
             openFileDialogTextEditor.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            openFileDialogTextEditor.Filter = "RTF|*.rtf|Text Files|*.txt|VB Files|*.vb|C# Files|*.cs|All Files|*.* ";
+            openFileDialogTextEditor.Filter = "Text Files|*.txt|VB Files|*.vb|C# Files|*.cs|All Files|*.* ";
 
             if (openFileDialogTextEditor.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 if (openFileDialogTextEditor.FileName.Length > 0)
                 {
-                    ObtenerDocumentoActual.LoadFile(openFileDialogTextEditor.FileName, RichTextBoxStreamType.PlainText);
+                    try
+                    {
+                        ObtenerDocumentoActual.LoadFile(openFileDialogTextEditor.FileName, RichTextBoxStreamType.PlainText);
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show(e.Message);
+                    }
                 }
             }
 

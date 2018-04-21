@@ -98,6 +98,12 @@
             this.closeAllButThisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timerTextEditor = new System.Windows.Forms.Timer(this.components);
             this.colorDialogTextEditor = new System.Windows.Forms.ColorDialog();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablaDeTransicionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainerTextEditor.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerTextEditor.ContentPanel.SuspendLayout();
             this.toolStripContainerTextEditor.LeftToolStripPanel.SuspendLayout();
@@ -197,7 +203,7 @@
             this.eliminarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("eliminarToolStripButton.Image")));
             this.eliminarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.eliminarToolStripButton.Name = "eliminarToolStripButton";
-            this.eliminarToolStripButton.Size = new System.Drawing.Size(30, 19);
+            this.eliminarToolStripButton.Size = new System.Drawing.Size(22, 19);
             this.eliminarToolStripButton.Text = "X";
             this.eliminarToolStripButton.Click += new System.EventHandler(this.eliminarToolStripButton_Click);
             // 
@@ -207,7 +213,7 @@
             this.abrirToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("abrirToolStripButton.Image")));
             this.abrirToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.abrirToolStripButton.Name = "abrirToolStripButton";
-            this.abrirToolStripButton.Size = new System.Drawing.Size(30, 20);
+            this.abrirToolStripButton.Size = new System.Drawing.Size(22, 20);
             this.abrirToolStripButton.Text = "&Abrir";
             this.abrirToolStripButton.Click += new System.EventHandler(this.abrirToolStripButton_Click);
             // 
@@ -217,14 +223,14 @@
             this.guardarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("guardarToolStripButton.Image")));
             this.guardarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.guardarToolStripButton.Name = "guardarToolStripButton";
-            this.guardarToolStripButton.Size = new System.Drawing.Size(30, 20);
+            this.guardarToolStripButton.Size = new System.Drawing.Size(22, 20);
             this.guardarToolStripButton.Text = "&Guardar";
             this.guardarToolStripButton.Click += new System.EventHandler(this.guardarToolStripButton_Click);
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(30, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(22, 6);
             // 
             // cortarToolStripButton
             // 
@@ -232,7 +238,7 @@
             this.cortarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("cortarToolStripButton.Image")));
             this.cortarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.cortarToolStripButton.Name = "cortarToolStripButton";
-            this.cortarToolStripButton.Size = new System.Drawing.Size(30, 20);
+            this.cortarToolStripButton.Size = new System.Drawing.Size(22, 20);
             this.cortarToolStripButton.Text = "Cort&ar";
             this.cortarToolStripButton.Click += new System.EventHandler(this.cortarToolStripButton_Click);
             // 
@@ -242,7 +248,7 @@
             this.copiarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("copiarToolStripButton.Image")));
             this.copiarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.copiarToolStripButton.Name = "copiarToolStripButton";
-            this.copiarToolStripButton.Size = new System.Drawing.Size(30, 20);
+            this.copiarToolStripButton.Size = new System.Drawing.Size(22, 20);
             this.copiarToolStripButton.Text = "&Copiar";
             this.copiarToolStripButton.Click += new System.EventHandler(this.copiarToolStripButton_Click);
             // 
@@ -252,21 +258,23 @@
             this.pegarToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("pegarToolStripButton.Image")));
             this.pegarToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.pegarToolStripButton.Name = "pegarToolStripButton";
-            this.pegarToolStripButton.Size = new System.Drawing.Size(30, 20);
+            this.pegarToolStripButton.Size = new System.Drawing.Size(22, 20);
             this.pegarToolStripButton.Text = "&Pegar";
             this.pegarToolStripButton.Click += new System.EventHandler(this.pegarToolStripButton_Click);
             // 
             // toolStripSeparator7
             // 
             this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(30, 6);
+            this.toolStripSeparator7.Size = new System.Drawing.Size(22, 6);
             // 
             // menuStripTopTextEditor
             // 
             this.menuStripTopTextEditor.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStripTopTextEditor.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.archivoToolStripMenuItem,
-            this.editarToolStripMenuItem});
+            this.editarToolStripMenuItem,
+            this.verToolStripMenuItem,
+            this.analizarToolStripMenuItem});
             this.menuStripTopTextEditor.Location = new System.Drawing.Point(0, 0);
             this.menuStripTopTextEditor.Name = "menuStripTopTextEditor";
             this.menuStripTopTextEditor.Size = new System.Drawing.Size(635, 24);
@@ -618,7 +626,6 @@
             // 
             // openFileDialogTextEditor
             // 
-            this.openFileDialogTextEditor.FileName = "openFileDialog1";
             this.openFileDialogTextEditor.Filter = "Text Files|*.txt|VB Files|*.vb|C# Files|*.cs|All Files|*.* ";
             // 
             // contextMenuStripTextEditor
@@ -716,6 +723,48 @@
             this.timerTextEditor.Enabled = true;
             this.timerTextEditor.Interval = 1;
             this.timerTextEditor.Tick += new System.EventHandler(this.timerTextEditor_Tick);
+            // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tablaDeTransicionesToolStripMenuItem});
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.verToolStripMenuItem.Text = "Ver";
+            // 
+            // tablaDeTransicionesToolStripMenuItem
+            // 
+            this.tablaDeTransicionesToolStripMenuItem.Name = "tablaDeTransicionesToolStripMenuItem";
+            this.tablaDeTransicionesToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.tablaDeTransicionesToolStripMenuItem.Text = "Tabla de Transiciones";
+            // 
+            // analizarToolStripMenuItem
+            // 
+            this.analizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem,
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem,
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem});
+            this.analizarToolStripMenuItem.Name = "analizarToolStripMenuItem";
+            this.analizarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.analizarToolStripMenuItem.Text = "Analizar";
+            // 
+            // ejecutarAnalizadorLéxicoToolStripMenuItem
+            // 
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Name = "ejecutarAnalizadorLéxicoToolStripMenuItem";
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Text = "Ejecutar analizador léxico";
+            // 
+            // ejecutarAnalizadorSintácticoToolStripMenuItem
+            // 
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Name = "ejecutarAnalizadorSintácticoToolStripMenuItem";
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Text = "Ejecutar analizador sintáctico";
+            // 
+            // ejecutarAnalizadorSemánticoToolStripMenuItem
+            // 
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Name = "ejecutarAnalizadorSemánticoToolStripMenuItem";
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Text = "Ejecutar analizador semántico";
             // 
             // frmLarvaTextEditor
             // 
@@ -821,6 +870,12 @@
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeAllToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem closeAllButThisToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tablaDeTransicionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem analizarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejecutarAnalizadorLéxicoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejecutarAnalizadorSintácticoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ejecutarAnalizadorSemánticoToolStripMenuItem;
     }
 }
 

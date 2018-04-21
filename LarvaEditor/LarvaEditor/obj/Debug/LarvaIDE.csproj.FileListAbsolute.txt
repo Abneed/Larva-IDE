@@ -8,3 +8,13 @@ C:\Users\Abneed\source\repos\LarvaEditor\LarvaEditor\obj\Debug\LarvaIDE.csproj.C
 C:\Users\Abneed\source\repos\LarvaEditor\LarvaEditor\obj\Debug\LarvaEditor.exe
 C:\Users\Abneed\source\repos\LarvaEditor\LarvaEditor\obj\Debug\LarvaEditor.pdb
 C:\Users\Abneed\source\repos\LarvaEditor\LarvaEditor\obj\Debug\LarvaIDE.csprojResolveAssemblyReference.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\bin\Debug\LarvaEditor.exe.config
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\bin\Debug\LarvaEditor.exe
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\bin\Debug\LarvaEditor.pdb
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaIDE.csprojResolveAssemblyReference.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaEditor.frmLarvaTextEditor.resources
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaEditor.Properties.Resources.resources
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaIDE.csproj.GenerateResource.Cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaIDE.csproj.CoreCompileInputs.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaEditor.exe
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\LarvaEditor\obj\Debug\LarvaEditor.pdb
