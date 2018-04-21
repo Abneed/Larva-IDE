@@ -1,3 +1,3 @@
 # Larva-IDE
 
-![Imagem de Larva IDE](img/LarvaInterfaz.png)
+![Image de Larva IDE](img/LarvaIDE_Logo.jpeg)
