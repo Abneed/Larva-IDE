@@ -109,13 +109,13 @@ namespace LarvaEditor
 
         #endregion Pestanas
 
-        #region SaveAndOpen 
+        #region GuardaryAbrir 
 
         private void Guardar()
         {
             saveFileDialogTextEditor.FileName = tabControlContainerTextEditor.SelectedTab.Name;
             saveFileDialogTextEditor.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            saveFileDialogTextEditor.Filter = "RTF|*.rtf";
+            saveFileDialogTextEditor.Filter = "Text Files|*.txt";
             saveFileDialogTextEditor.Title = "Guardar";
 
             if (saveFileDialogTextEditor.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -158,7 +158,7 @@ namespace LarvaEditor
 
         }
 
-        #endregion SaveAndOpen
+        #endregion GuardaryAbrir
 
         #region Texto
 
