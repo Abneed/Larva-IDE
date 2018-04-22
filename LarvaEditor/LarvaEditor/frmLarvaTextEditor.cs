@@ -1,21 +1,25 @@
 ﻿// Larva IDE
-// Copyright(c) Guillermo A.Rodríguez.
 //
-// Se concede permiso, de forma gratuita, a cualquier persona que obtenga una copia
-// de este software y archivos de documentación asociados (el "Software"), para tratar 
-// el Software sin restricciones, incluidos, entre otros, los derechos de 
-// uso, copia, modificación, fusión, publicación, distribución, sublicencia y / o venta de copias 
-// del Software y para permitir a las personas a quienes se les proporciona el Software que lo hagan, 
-// sujeto a las siguientes condiciones:
+// Copyright(c) 2018 Guillermo A. Rodríguez
 //
-// El aviso de copyright anterior y este aviso de permiso se incluirán en todos
-// copias o porciones sustanciales del software.
+// Licencia MIT(https://es.wikipedia.org/wiki/Licencia_MIT)
+//
+// Se concede permiso, libre de cargos, a cualquier persona que obtenga una copia
+// de este software y de los archivos de documentación asociados (el "Software"), 
+// para utilizar el Software sin restricción, incluyendo sin limitación los derechos
+// a usar, copiar, modificar, fusionar, publicar, distribuir, sublicenciar, y/o vender copias
+// del Software, y a permitir a las personas a las que se les proporcione el Software a hacer
+// lo mismo, sujeto a las siguientes condiciones:
+//
+// El aviso de copyright anterior y este aviso de permiso se incluirán en todas
+// las copias o partes sustanciales del Software.
 //
 // EL SOFTWARE SE PROPORCIONA "TAL CUAL", SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O IMPLÍCITA, 
-// INCLUIDAS, ENTRE OTRAS, LAS GARANTÍAS DE COMERCIABILIDAD, IDONEIDAD PARA UN PROPÓSITO EN PARTICULAR 
-// Y NO INFRACCIÓN. EN NINGÚN CASO LOS AUTORES O PROPIETARIOS DE DERECHOS DE AUTOR SERÁN RESPONSABLES 
-// DE NINGÚN RECLAMO, DAÑO O DEMÁS RESPONSABILIDADES, YA SEA EN UNA ACCIÓN CONTRACTUAL, EXTRACONTRACTUAL 
-// O DE OTRO TIPO, DERIVADOS, FUERA DEL USO DEL SOFTWARE O DEL USO O DE OTROS TRATADOS EN EL SOFTWARE.
+// INCLUYENDO PERO NO LIMITADA A GARANTÍAS DE COMERCIALIZACIÓN, IDONEIDAD PARA UN PROPÓSITO PARTICULAR
+// Y NO INFRACCIÓN.EN NINGÚN CASO LOS AUTORES O PROPIETARIOS DE LOS DERECHOS DE AUTOR SERÁN RESPONSABLES
+// DE NINGUNA RECLAMACIÓN, DAÑOS U OTRAS RESPONSABILIDADES, YA SEA EN UNA ACCIÓN DE CONTRATO, AGRAVIO
+// O CUALQUIER OTRO MOTIVO, DERIVADAS DE, FUERA DE O EN CONEXIÓN CON EL SOFTWARE O SU USO U OTRO TIPO
+// DE ACCIONES EN EL SOFTWARE.
 
 
 using System;
@@ -27,6 +31,10 @@ namespace LarvaEditor
 {
     public partial class frmLarvaTextEditor : Form
     {
+
+        private const string FuentePredeterminada = "Arial";
+        private const float TamanoFuentePredeterminada = 16;
+
         public frmLarvaTextEditor()
         {
             InitializeComponent();
@@ -61,6 +69,7 @@ namespace LarvaEditor
             Cuerpo.Name = "Cuerpo";
             Cuerpo.Dock = DockStyle.Fill;
             Cuerpo.ContextMenuStrip = contextMenuStripTextEditor;
+            Cuerpo.SelectionFont = ObtenerFuentePredeterminados();
 
             TabPage NuevaPagina = new TabPage();
             ConteoPestanas++;
@@ -124,7 +133,7 @@ namespace LarvaEditor
                 {
                     try
                     {
-                        ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.RichText);
+                        ObtenerDocumentoActual.SaveFile(saveFileDialogTextEditor.FileName, RichTextBoxStreamType.PlainText);
                     }
                     catch (Exception e)
                     {
@@ -237,6 +246,13 @@ namespace LarvaEditor
             toolStripComboBoxFontSize.SelectedIndex = 15;
         }
 
+        private Font ObtenerFuentePredeterminados()
+        {
+            Font NuevaFuente = new Font(FuentePredeterminada,
+               TamanoFuentePredeterminada, FontStyle.Regular);
+
+            return NuevaFuente;
+        }
 
         #endregion
 
@@ -410,10 +426,10 @@ namespace LarvaEditor
 
         private void toolStripComboBoxFontFamily_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Font NewFont = new Font(toolStripComboBoxFontFamily.SelectedItem.ToString(),
+            Font NuevaFuente = new Font(toolStripComboBoxFontFamily.SelectedItem.ToString(),
                 ObtenerDocumentoActual.SelectionFont.Size, ObtenerDocumentoActual.SelectionFont.Style);
 
-            ObtenerDocumentoActual.SelectionFont = NewFont;
+            ObtenerDocumentoActual.SelectionFont = NuevaFuente;
         }
 
         private void toolStripComboBoxFontSize_SelectedIndexChanged(object sender, EventArgs e)
@@ -524,6 +540,11 @@ namespace LarvaEditor
         private void seleccionartodoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SeleccionarTodo();
+        }
+
+        private void tablaDeTransicionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

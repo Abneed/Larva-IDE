@@ -62,6 +62,12 @@
             this.pegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.seleccionartodoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tablaDeTransicionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripTopTextEditor = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBold = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonItalic = new System.Windows.Forms.ToolStripButton();
@@ -98,12 +104,6 @@
             this.closeAllButThisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timerTextEditor = new System.Windows.Forms.Timer(this.components);
             this.colorDialogTextEditor = new System.Windows.Forms.ColorDialog();
-            this.verToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tablaDeTransicionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.analizarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarAnalizadorLéxicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarAnalizadorSintácticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ejecutarAnalizadorSemánticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainerTextEditor.BottomToolStripPanel.SuspendLayout();
             this.toolStripContainerTextEditor.ContentPanel.SuspendLayout();
             this.toolStripContainerTextEditor.LeftToolStripPanel.SuspendLayout();
@@ -427,6 +427,49 @@
             this.seleccionartodoToolStripMenuItem.Text = "&Seleccionar todo";
             this.seleccionartodoToolStripMenuItem.Click += new System.EventHandler(this.seleccionartodoToolStripMenuItem_Click);
             // 
+            // verToolStripMenuItem
+            // 
+            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tablaDeTransicionesToolStripMenuItem});
+            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
+            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.verToolStripMenuItem.Text = "Ver";
+            // 
+            // tablaDeTransicionesToolStripMenuItem
+            // 
+            this.tablaDeTransicionesToolStripMenuItem.Name = "tablaDeTransicionesToolStripMenuItem";
+            this.tablaDeTransicionesToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.tablaDeTransicionesToolStripMenuItem.Text = "Tabla de Transiciones";
+            this.tablaDeTransicionesToolStripMenuItem.Click += new System.EventHandler(this.tablaDeTransicionesToolStripMenuItem_Click);
+            // 
+            // analizarToolStripMenuItem
+            // 
+            this.analizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem,
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem,
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem});
+            this.analizarToolStripMenuItem.Name = "analizarToolStripMenuItem";
+            this.analizarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.analizarToolStripMenuItem.Text = "Analizar";
+            // 
+            // ejecutarAnalizadorLéxicoToolStripMenuItem
+            // 
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Name = "ejecutarAnalizadorLéxicoToolStripMenuItem";
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Text = "Ejecutar analizador léxico";
+            // 
+            // ejecutarAnalizadorSintácticoToolStripMenuItem
+            // 
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Name = "ejecutarAnalizadorSintácticoToolStripMenuItem";
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Text = "Ejecutar analizador sintáctico";
+            // 
+            // ejecutarAnalizadorSemánticoToolStripMenuItem
+            // 
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Name = "ejecutarAnalizadorSemánticoToolStripMenuItem";
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
+            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Text = "Ejecutar analizador semántico";
+            // 
             // toolStripTopTextEditor
             // 
             this.toolStripTopTextEditor.Dock = System.Windows.Forms.DockStyle.None;
@@ -723,48 +766,6 @@
             this.timerTextEditor.Enabled = true;
             this.timerTextEditor.Interval = 1;
             this.timerTextEditor.Tick += new System.EventHandler(this.timerTextEditor_Tick);
-            // 
-            // verToolStripMenuItem
-            // 
-            this.verToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tablaDeTransicionesToolStripMenuItem});
-            this.verToolStripMenuItem.Name = "verToolStripMenuItem";
-            this.verToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
-            this.verToolStripMenuItem.Text = "Ver";
-            // 
-            // tablaDeTransicionesToolStripMenuItem
-            // 
-            this.tablaDeTransicionesToolStripMenuItem.Name = "tablaDeTransicionesToolStripMenuItem";
-            this.tablaDeTransicionesToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.tablaDeTransicionesToolStripMenuItem.Text = "Tabla de Transiciones";
-            // 
-            // analizarToolStripMenuItem
-            // 
-            this.analizarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ejecutarAnalizadorLéxicoToolStripMenuItem,
-            this.ejecutarAnalizadorSintácticoToolStripMenuItem,
-            this.ejecutarAnalizadorSemánticoToolStripMenuItem});
-            this.analizarToolStripMenuItem.Name = "analizarToolStripMenuItem";
-            this.analizarToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.analizarToolStripMenuItem.Text = "Analizar";
-            // 
-            // ejecutarAnalizadorLéxicoToolStripMenuItem
-            // 
-            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Name = "ejecutarAnalizadorLéxicoToolStripMenuItem";
-            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.ejecutarAnalizadorLéxicoToolStripMenuItem.Text = "Ejecutar analizador léxico";
-            // 
-            // ejecutarAnalizadorSintácticoToolStripMenuItem
-            // 
-            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Name = "ejecutarAnalizadorSintácticoToolStripMenuItem";
-            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.ejecutarAnalizadorSintácticoToolStripMenuItem.Text = "Ejecutar analizador sintáctico";
-            // 
-            // ejecutarAnalizadorSemánticoToolStripMenuItem
-            // 
-            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Name = "ejecutarAnalizadorSemánticoToolStripMenuItem";
-            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.ejecutarAnalizadorSemánticoToolStripMenuItem.Text = "Ejecutar analizador semántico";
             // 
             // frmLarvaTextEditor
             // 
