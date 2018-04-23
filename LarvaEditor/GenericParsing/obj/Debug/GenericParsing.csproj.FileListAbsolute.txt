@@ -1,0 +1,6 @@
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\GenericParsing\bin\Debug\GenericParsing.dll
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\GenericParsing\bin\Debug\GenericParsing.pdb
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\GenericParsing\obj\Debug\GenericParsing.csprojResolveAssemblyReference.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\GenericParsing\obj\Debug\GenericParsing.csproj.CoreCompileInputs.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\GenericParsing\obj\Debug\GenericParsing.dll
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\GenericParsing\obj\Debug\GenericParsing.pdb

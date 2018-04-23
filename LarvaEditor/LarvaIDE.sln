@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LarvaIDE", "LarvaEditor\LarvaIDE.csproj", "{D714C1EF-C2A5-4C48-B4C5-F2C77A622253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericParsing", "GenericParsing\GenericParsing.csproj", "{AC4CF919-B731-47B9-AF29-ED843A2EF810}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Automata", "Automata\Automata.csproj", "{1052E8A8-83FF-4D23-9FD2-2EBB8D679EA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D714C1EF-C2A5-4C48-B4C5-F2C77A622253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D714C1EF-C2A5-4C48-B4C5-F2C77A622253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D714C1EF-C2A5-4C48-B4C5-F2C77A622253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4CF919-B731-47B9-AF29-ED843A2EF810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4CF919-B731-47B9-AF29-ED843A2EF810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4CF919-B731-47B9-AF29-ED843A2EF810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4CF919-B731-47B9-AF29-ED843A2EF810}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1052E8A8-83FF-4D23-9FD2-2EBB8D679EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1052E8A8-83FF-4D23-9FD2-2EBB8D679EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1052E8A8-83FF-4D23-9FD2-2EBB8D679EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1052E8A8-83FF-4D23-9FD2-2EBB8D679EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

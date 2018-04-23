@@ -1,0 +1,8 @@
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\bin\Debug\Automata.dll
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\bin\Debug\Automata.pdb
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\bin\Debug\GenericParsing.dll
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\bin\Debug\GenericParsing.pdb
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\obj\Debug\Automata.csprojResolveAssemblyReference.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\obj\Debug\Automata.csproj.CoreCompileInputs.cache
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\obj\Debug\Automata.dll
+C:\Users\Abneed\Documents\GitHub\Larva-IDE\LarvaEditor\Automata\obj\Debug\Automata.pdb
